@@ -1,7 +1,9 @@
 <h1 align="center">f-redux</h1>
 <p align="center"><img width="300" src="./.github/logo.jpg"/></p>
 <p align="center">keep it simple stupid</p>
+
 ----
+
 ## Usage
 
 ```tsx
