@@ -24,8 +24,5 @@
     "peerDependencies": {
         "react": "latest",
         "react-dom": "latest"
-    },
-    "dependencies": {
-        "react": "^16.11.0"
     }
 }
