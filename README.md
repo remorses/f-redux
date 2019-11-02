@@ -3,6 +3,7 @@
 <p align="center">keep it simple stupid</p>
 ----
 ## Usage
+
 ```tsx
 import makeHook, { Store } from 'f-redux'
 
