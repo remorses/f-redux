@@ -1,4 +1,4 @@
-<h1 align="center">f-redux<h1>
+<h1 align="center">f-redux</h1>
 <p align="center"><img src="./.github/logo.jpg"/></p>
 
 ```tsx
