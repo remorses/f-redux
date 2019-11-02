@@ -1,7 +1,7 @@
-# use-shared-state
+# f-redux
 
 ```tsx
-import makeHook, { Store } from 'use-shared-state'
+import makeHook, { Store } from 'f-redux'
 
 const initialState = {
     counter: 0,
