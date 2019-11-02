@@ -7,7 +7,7 @@
 ## Usage
 
 ```tsx
-import makeHook, { Store } from 'f-redux'
+import makeHook, { Store } from 'fuck-redux'
 
 const initialState = {
     counter: 0,
