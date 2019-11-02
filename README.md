@@ -1,4 +1,5 @@
-# f-redux
+<h1 align="center">f-redux<h1>
+<p align="center"><img src="./.github/logo.jpg"/></p>
 
 ```tsx
 import makeHook, { Store } from 'f-redux'
