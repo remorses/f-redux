@@ -1,6 +1,6 @@
 <p align="center"><img width="300" src="./.github/logo.jpg"/></p>
 <h1 align="center">f-redux</h1>
-<h3 align="center">keep it simple stupid</h3>
+<h3 align="center">the hooks revolution has just started</h3>
 
 
 
