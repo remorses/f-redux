@@ -55,7 +55,7 @@ export type Hook<State, Actions> = <
     mapActions?: (actions: Actions) => SelectedActions,
 ) => [SelectedState, SelectedActions]
 
-const useStore = <
+const makeHook = <
     State,
     ActionsMaker extends (store: Store<State, any>) => any
 >(
@@ -73,4 +73,4 @@ const useStore = <
     return useCustom.bind(null, store)
 }
 
-export default useStore
+export default makeHook

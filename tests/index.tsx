@@ -1,23 +1,24 @@
 import { strict as assert } from 'assert'
 import DOM from 'react-dom'
-import useStore, { Store } from '../src'
+import makeHook, { Store } from '../src'
 import React from 'react'
+
 
 const initialState = {
     counter: 0,
 }
 
 const actions = (store: Store<typeof initialState>) => ({
-    addToCounter: async (amount) => {
+    addToCounter: (amount) => {
         const newCounterValue = store.state.counter + amount
         store.setState({ counter: newCounterValue })
     },
 })
 
-const useGlobal = useStore(initialState, actions)
+const useSharedState = makeHook(initialState, actions)
 
 const App = () => {
-    const [globalState, globalActions] = useGlobal()
+    const [globalState, globalActions] = useSharedState()
     return (
         <div>
             <p>
