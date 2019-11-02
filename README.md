@@ -5,7 +5,9 @@
 
 
 ## Usage
-
+```
+npm i fuck-redux
+```
 ```tsx
 import makeHook, { Store } from 'fuck-redux'
 
