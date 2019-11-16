@@ -8,6 +8,8 @@ const initialState = {
     counter: 0,
 }
 
+type State = typeof initialState
+
 const actions = (store: Store<typeof initialState>) => ({
     addToCounter: (amount) => {
         const newCounterValue = store.state.counter + amount

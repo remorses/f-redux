@@ -1,4 +1,5 @@
 import React from 'react'
+import Hook from './HookType'
 
 function setState(store, newState, afterUpdateCallback) {
     store.state = { ...store.state, ...newState }
@@ -47,13 +48,6 @@ export interface Store<State = any, Actions = any> {
     setState: (update: Partial<State>, callback?: () => void) => void
 }
 
-export type Hook<State, Actions> = <
-    SelectedState = State,
-    SelectedActions = Actions
->(
-    mapState?: (state: State) => SelectedState,
-    mapActions?: (actions: Actions) => SelectedActions,
-) => [SelectedState, SelectedActions]
 
 const makeHook = <
     State,
@@ -74,3 +68,4 @@ const makeHook = <
 }
 
 export default makeHook
+export {default as Hook} from './HookType'
